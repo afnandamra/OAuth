@@ -10,7 +10,7 @@ const permissions = require('./middleware/acl.js');
 const oauth = require('./middleware/oauth.js');
 
 authRouter.get('/fb_oauth',oauth, (req, res) => {
-  res.redirect('/');
+  res.send('Connected to facebook!!');
 });
 
 authRouter.post('/signup', async (req, res, next) => {
