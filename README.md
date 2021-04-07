@@ -1,45 +1,36 @@
 # LAB: OAuth
 
-Authentication Server Phase 3: Role Based Access Control
+Authentication Server Phase 4: Facebook login OAuth 2
 
-**Author:** Afnan Damra
+**Author:** Afnan Damra - Bahaa Zghayar - Bashar Nofal - Motasem Khaled - Ruba Banat
 **Version:** 3.0.0
 
 **Links:**
 
-- [Repo Link](https://github.com/afnandamra/auth-api)
-- [GitHub Actions](https://github.com/afnandamra/auth-api/actions)
-- [Deployed Site](https://afnan-auth-api.herokuapp.com/)
-- [PR Link](https://github.com/afnandamra/auth-api/pull/1)
+- [Repo Link](https://github.com/afnandamra/OAuth)
+- [Deployed Site](https://fb-oauth-abbmr.herokuapp.com/)
 
 ## Setup
 
 ### Install
 
 - Clone the repository from GitHub
-- Run the command `npm i express dotenv morgan base-64 bcrypt cors mongoose jsonwebtoken fs jest @code-fellows/supergoose` to install dependencies
-- create .env file with PORT variable and `MONGODB_URI=mongodb://localhost:27017/auth_2` and a secret key `SECRET=xyz`
+- Run the command `npm i express dotenv morgan base-64 bcrypt cors superagent mongoose jsonwebtoken fs` to install dependencies
+- create .env file with these variables: 
+    ```
+        PORT=4000
+        MONGODB_URI=mongodb+srv://afnandamra:dJZZ4UYeu7eT4sJP@authapi.vdwa0.mongodb.net/oauth?retryWrites=true&w=majority
+        SECRET=supersecret
+        App_ID=499316858094104
+        App_SECRET=9fca554469e5c6af5643b8076ca779dd
+        REDIRECT_URI=https://fb-oauth-abbmr.herokuapp.com/fb_oauth
+    ```
+- Facebook Test Account : 
+    ```
+        email: kgmlhgegec_1617802312@tfbnw.net
+        Password: 12345asdf
+    ```
 
-### Test
-
-- Run the command `npm test` to test and verify the server and the midddlewares are working.
-- Run the command `npm run lint` for testing lint.
-
-![TEST Lab8](assets/lab8test.jpg)
-
-### Run
-
-- Start the server using `nodemon`
-- Visit http://localhost:PORT at the PORT number you've assigned in your .env
-- put the [Heroku Link](https://afnan-auth-api.herokuapp.com/) inside this one [https://javascript-401.netlify.app/](https://javascript-401.netlify.app/), choose Module 3 (AUTH) / ACL, and have fun :smile:
-
-## Documentation
-
-### UML Diagram
-
-Below is a UML of my application (created at https://app.diagrams.net)
-
-![UML Lab8](assets/lab8.jpg)
 
 ## Resources
 
