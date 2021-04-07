@@ -38,7 +38,7 @@ Both facebook and Express are very popular in the tech feild and has many suppor
 ### Links and Resources
 * [framework](https://expressjs.com/)
 * [docs](https://developers.facebook.com/docs/facebook-login/web)
-* [examples/tutorials](https://developers.facebook.com/docs/facebook-login/web)
+* [examples/tutorials](https://www.ktlsolutions.com/how-tos/how-to-get-facebook-data-using-oauth-2-0/)
 
 ### Code Demos
 * [live/running application](https://fb-oauth-abbmr.herokuapp.com/)
