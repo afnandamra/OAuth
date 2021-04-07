@@ -7,6 +7,11 @@ const User = require('./models/users.js');
 const basicAuth = require('./middleware/basic.js');
 const bearerAuth = require('./middleware/bearer.js');
 const permissions = require('./middleware/acl.js');
+const oauth = require('./middleware/oauth.js');
+
+authRouter.get('/fb_oauth',oauth, (req, res) => {
+  res.redirect('/');
+});
 
 authRouter.post('/signup', async (req, res, next) => {
   try {
